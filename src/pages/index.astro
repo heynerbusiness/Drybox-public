@@ -1,0 +1,380 @@
+---
+import Base from '../layouts/Base.astro';
+
+// NOTE (Lennart): Platzhalter-Kontaktdaten — bitte ersetzen, bevor die Seite live geht.
+// "DryBox" ist ein Arbeitstitel und lässt sich in Sekunden umbenennen.
+// Positionierung v2 (13.10.2026): schnellster lokaler 24/7-Notdienst, Premium-Fleet,
+// deutsche Gründlichkeit, Bundles + Contractor-Accounts als Skalierungshebel.
+const PHONE_DISPLAY = '(628) 276-5621';
+const PHONE_LINK = 'tel:+16282765621';
+const EMAIL = 'drybox@heyner.business';
+---
+
+<Base
+  title="DryBox — 24/7 Emergency Flood Drying in Los Angeles & Orange County"
+  description="Flooded at 2 AM? Pro-grade LGR dehumidifiers at your door in ~90 minutes, day or night. German drying discipline, insurance-ready docs. LA & Orange County."
+>
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="DryBox home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#19B5D6"/>
+          <path d="M32 10c8 10 14 17.5 14 26a14 14 0 1 1-28 0c0-8.5 6-16 14-26z" fill="#071522"/>
+          <path d="M24 38a8 8 0 0 0 8 8" stroke="#19B5D6" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        DRYBOX
+      </a>
+      <div class="nav-links" data-nav-links>
+        <a href="#fleet">Fleet</a>
+        <a href="#packages">Packages</a>
+        <a href="#contractors">Contractors</a>
+        <a href="#area">Service area</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-accent" href={PHONE_LINK}>24/7: {PHONE_DISPLAY}</a>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <svg class="hero-waves" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+      <path d="M-40 120 Q 60 80 160 120 T 360 120 T 560 120" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 180 Q 60 140 160 180 T 360 180 T 560 180" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 240 Q 60 200 160 240 T 360 240 T 560 240" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 300 Q 60 260 160 300 T 360 300 T 560 300" stroke="#19B5D6" stroke-width="10" fill="none"/>
+    </svg>
+    <div class="wrap">
+      <span class="eyebrow eyebrow-light">24/7 emergency flood drying — Los Angeles &amp; Orange County</span>
+      <h1>Flooded at 2 AM?<br /><span class="water-word">We're already on the way.</span></h1>
+      <p class="lead">
+        Pro-grade LGR dehumidifiers and drying gear at your door in about
+        <b>90 minutes</b> — day or night. German drying discipline:
+        moisture-logged, photo-documented, insurance-ready.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href={PHONE_LINK}>📞 Call now — 24/7</a>
+        <a class="btn btn-ghost" href="#packages">See packages &amp; rates</a>
+      </div>
+      <div class="hero-trust">
+        <span><i class="dot"></i>~90-min emergency response</span>
+        <span><i class="dot"></i>Insurance-ready documentation</span>
+        <span><i class="dot"></i>German-owned &amp; operated</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ STATS ============ -->
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><b>~90 min</b><span>average emergency response time</span></div>
+      <div class="stat"><b>24/7/365</b><span>nights, weekends, holidays — we answer</span></div>
+      <div class="stat"><b>230 pints</b><span>max. water removal per day, per flagship unit</span></div>
+      <div class="stat"><b>$1,700+</b><span>pro machines in our fleet — never homeowner toys</span></div>
+    </div>
+  </div>
+
+  <!-- ============ WHY DRYBOX ============ -->
+  <section id="why">
+    <div class="wrap">
+      <span class="eyebrow">Why DryBox</span>
+      <h2 class="section-title">The fastest dry-out in town.<br />With German discipline.</h2>
+      <p class="section-sub">
+        Anyone can rent you a box. We bring speed, pro gear and paperwork
+        your insurance adjuster will love.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon"><span style="font-size:26px">🚨</span></div>
+          <h3>Speed, guaranteed</h3>
+          <p class="spec">Water damage doesn't keep office hours — neither do we. Emergency dispatch in about 90 minutes, anywhere in LA &amp; OC, 24 hours a day.</p>
+        </div>
+        <div class="card featured">
+          <span class="card-badge">Our edge</span>
+          <div class="card-icon"><span style="font-size:26px">🏆</span></div>
+          <h3>Pro fleet only</h3>
+          <p class="spec">Every unit is a $1,500+ pro machine — XPOWER, Tomahawk, Dri-Eaz class LGR dehumidifiers. We bought the expensive gear so you don't have to.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><span style="font-size:26px">🇩🇪</span></div>
+          <h3>German discipline</h3>
+          <p class="spec">Every job gets a moisture log, photo documentation and an insurance-ready invoice. Gründlichkeit is our love language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FLEET ============ -->
+  <section id="fleet" style="padding-top: 0;">
+    <div class="wrap">
+      <span class="eyebrow">The fleet</span>
+      <h2 class="section-title">The good stuff. Only the good stuff.</h2>
+      <p class="section-sub">
+        The same machines the big restoration franchises run — maintained,
+        calibrated and ready to roll within minutes.
+      </p>
+      <div class="cards">
+        <div class="card featured">
+          <span class="card-badge">Flagship</span>
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#19B5D6" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 3c3.5 4.4 6 7.7 6 11.2a6 6 0 1 1-12 0C6 10.7 8.5 7.4 12 3z"/>
+              <path d="M9.5 14.5a2.8 2.8 0 0 0 2.8 2.8"/>
+            </svg>
+          </div>
+          <h3>LGR Dehumidifier</h3>
+          <p class="spec">Tomahawk TCD230 class · 230 pints/day. The workhorse that pulls moisture out of walls, floors and air — even at low humidity.</p>
+          <ul>
+            <li>230 pints/day extraction</li>
+            <li>Covers 1,500+ sq ft</li>
+            <li>Auto pump-out — no emptying tanks</li>
+            <li>Runs 24/7 until materials test dry</li>
+          </ul>
+          <div class="price"><b>$129</b> <small>/ day · $520 / week</small></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#19B5D6" stroke-width="1.8" stroke-linecap="round">
+              <circle cx="12" cy="12" r="2.4"/>
+              <path d="M12 9.6C12 6 13.5 3.5 16 3c.6 2.8-.6 5.4-2.6 6.6M14.4 12c3.6 0 6.1 1.5 6.6 4-2.8.6-5.4-.6-6.6-2.6M12 14.4c0 3.6-1.5 6.1-4 6.6-.6-2.8.6-5.4 2.6-6.6M9.6 12C6 12 3.5 10.5 3 8c2.8-.6 5.4.6 6.6 2.6"/>
+            </svg>
+          </div>
+          <h3>Air Mover</h3>
+          <p class="spec">High-velocity 2,700 CFM fan. Pushes dry air across floors and up walls — the dehumidifier's best friend.</p>
+          <ul>
+            <li>Dries floors, carpets &amp; drywall</li>
+            <li>Stackable, daisy-chainable</li>
+            <li>Whisper-quiet-ish? No. Effective? Yes.</li>
+          </ul>
+          <div class="price"><b>$39</b> <small>/ day · $155 / week</small></div>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#19B5D6" stroke-width="1.8" stroke-linecap="round">
+              <path d="M4 10h16v3H4zM6 13.5h12V17H6zM9 17v2.5M15 17v2.5"/>
+              <path d="M7 7.5c1-1.6 2.4-2.4 5-2.4s4 .8 5 2.4"/>
+            </svg>
+          </div>
+          <h3>HEPA Air Scrubber</h3>
+          <p class="spec">500 CFM HEPA filtration. Scrubs mold spores, fine dust and odors out of the air while the room dries.</p>
+          <ul>
+            <li>Captures mold spores &amp; fine dust</li>
+            <li>Odor-control carbon stage</li>
+            <li>Negative-air capable</li>
+          </ul>
+          <div class="price"><b>$99</b> <small>/ day · $395 / week</small></div>
+        </div>
+      </div>
+      <p class="rates-note">
+        <b>We buy the $1,500+ machines so you don't have to.</b> Every unit is
+        pro-grade, serviced after each job and tested before dispatch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGES ============ -->
+  <section id="packages" class="how">
+    <div class="wrap">
+      <span class="eyebrow">Packages &amp; rates</span>
+      <h2 class="section-title" style="color:#fff">One call. One flat rate.<br />Zero surprises.</h2>
+      <p class="section-sub">Bundles for the jobs we see every day — cheaper than the sum of their parts, and you don't have to think about sizing.</p>
+      <div class="cards">
+        <div class="card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14);">
+          <h3 style="color:#fff">Single-Room Rescue</h3>
+          <p class="spec" style="color: rgba(255,255,255,0.65);">LGR dehumidifier + 1 air mover + moisture log</p>
+          <ul style="color: rgba(255,255,255,0.85);">
+            <li>The most common job we run</li>
+            <li>Typical dry-out: 3–5 days</li>
+            <li>Insurance-ready invoice included</li>
+          </ul>
+          <div class="price" style="border-color: rgba(255,255,255,0.14);"><b style="color:#fff">$149</b> <small style="color: rgba(255,255,255,0.6);">/ day</small></div>
+        </div>
+        <div class="card featured" style="background:#fff;">
+          <span class="card-badge">Most popular</span>
+          <h3>Emergency Dry-Out Kit</h3>
+          <p class="spec">Flagship LGR + 2 air movers + moisture log + photo docs</p>
+          <ul>
+            <li>Our fastest full dry-out setup</li>
+            <li>90-min emergency delivery available</li>
+            <li>Daily moisture check-ins</li>
+          </ul>
+          <div class="price"><b>$189</b> <small>/ day</small></div>
+        </div>
+        <div class="card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14);">
+          <h3 style="color:#fff">Whole Home / Jobsite</h3>
+          <p class="spec" style="color: rgba(255,255,255,0.65);">2× LGR + 4 air movers + HEPA scrubber</p>
+          <ul style="color: rgba(255,255,255,0.85);">
+            <li>For large losses &amp; contractors</li>
+            <li>Multi-week rates on request</li>
+            <li>Dedicated dispatcher</li>
+          </ul>
+          <div class="price" style="border-color: rgba(255,255,255,0.14);"><b style="color:#fff">$349</b> <small style="color: rgba(255,255,255,0.6);">/ day</small></div>
+        </div>
+      </div>
+      <p class="rates-note" style="color: rgba(255,255,255,0.65);">
+        🚨 Emergency delivery (~90 min) <b style="color:#fff">$149</b> ·
+        ⚡ Same-day delivery <b style="color:#fff">$79</b> ·
+        📦 Scheduled delivery <b style="color:#fff">free</b> ·
+        Pickup always free.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTRACTORS ============ -->
+  <section id="contractors">
+    <div class="wrap">
+      <span class="eyebrow">For contractors &amp; jobsites</span>
+      <h2 class="section-title">Concrete won't wait<br />for the schedule.</h2>
+      <p class="section-sub">
+        Drying for coatings, slab cures and water intrusion on active sites.
+        Open a DryBox contractor account and skip the line — every time.
+      </p>
+      <div class="area-grid">
+        <div class="area-col">
+          <h3>⚡ Priority dispatch line</h3>
+          <p class="spec">One number, no queue. Your sites jump to the front — including nights and weekends.</p>
+        </div>
+        <div class="area-col">
+          <h3>💰 15% off the rate card</h3>
+          <p class="spec">Standing contractor discount on every unit, every day. Volume tiers for multi-site crews.</p>
+        </div>
+        <div class="area-col">
+          <h3>🧾 Monthly consolidated billing</h3>
+          <p class="spec">One invoice per month across all your sites — with moisture logs attached for your clients.</p>
+        </div>
+        <div class="area-col">
+          <h3>📋 Docs your clients love</h3>
+          <p class="spec">Moisture readings, photo documentation and insurance-ready invoices, delivered per job.</p>
+        </div>
+      </div>
+      <div style="margin-top: 32px;">
+        <a class="btn btn-dark" href={`mailto:${EMAIL}?subject=Contractor%20account%20request`}>Open a contractor account</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how" style="background: var(--navy-900);">
+    <div class="wrap">
+      <span class="eyebrow">How it works</span>
+      <h2 class="section-title" style="color:#fff">Dry in three steps.</h2>
+      <p class="section-sub">No forms, no quotes that take a week. Water damage doesn't wait — neither do we.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Call or text — 24/7</h3>
+          <p>Tell us what's wet. We size the right gear on the spot and give you one flat rate. Two minutes, done.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>We come &amp; set up</h3>
+          <p>Emergency in ~90 minutes, same-day, or scheduled — anywhere in LA &amp; OC. We place the machines for optimal airflow and start them up.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>We monitor &amp; pick up</h3>
+          <p>Moisture readings until materials test dry — typically 3–5 days — then we collect everything. You get the insurance-ready docs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section id="area">
+    <div class="wrap">
+      <span class="eyebrow">Service area</span>
+      <h2 class="section-title">LA &amp; Orange County.<br />That's the whole pitch.</h2>
+      <p class="section-sub">We're local. When the storm hits, we're already around the corner — not dispatching from three counties away.</p>
+      <div class="area-grid">
+        <div class="area-col">
+          <h3>📍 Los Angeles County</h3>
+          <div class="chips">
+            <span class="chip">Long Beach</span><span class="chip">Los Angeles</span>
+            <span class="chip">Santa Monica</span><span class="chip">Venice</span>
+            <span class="chip">Pasadena</span><span class="chip">Glendale</span>
+            <span class="chip">Burbank</span><span class="chip">Torrance</span>
+            <span class="chip">Manhattan Beach</span><span class="chip">El Segundo</span>
+          </div>
+        </div>
+        <div class="area-col">
+          <h3>📍 Orange County</h3>
+          <div class="chips">
+            <span class="chip">Anaheim</span><span class="chip">Irvine</span>
+            <span class="chip">Huntington Beach</span><span class="chip">Newport Beach</span>
+            <span class="chip">Costa Mesa</span><span class="chip">Santa Ana</span>
+            <span class="chip">Fullerton</span><span class="chip">Laguna Beach</span>
+            <span class="chip">San Clemente</span><span class="chip">Seal Beach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Good questions.</h2>
+      <div class="faq-list">
+        <div class="faq-item" data-faq>
+          <button>Do you really come at 3 in the morning? <span class="plus">+</span></button>
+          <div class="answer"><p>Yes. Water doesn't wait for business hours, so neither do we — 24 hours a day, 365 days a year. Emergency dispatch averages around 90 minutes anywhere in LA &amp; Orange County.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Why are you more expensive than renting from Home Depot? <span class="plus">+</span></button>
+          <div class="answer"><p>Home Depot rents you a box. We deliver pro-grade $1,700+ machines, place them for optimal airflow, monitor moisture until materials test dry, document everything for your insurance and pick it all up again. You're not renting a machine — you're buying a dry home.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>How long does drying take? <span class="plus">+</span></button>
+          <div class="answer"><p>A single wet room typically needs 3–5 days of continuous drying. We take moisture readings and only pick up the equipment once materials test dry — rushing it is how mold happens.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Will this prevent mold? <span class="plus">+</span></button>
+          <div class="answer"><p>Drying within the first 24–48 hours is the single biggest factor in preventing mold growth. Our gear removes the moisture mold needs to thrive, and the HEPA scrubber filters spores out of the air while we work. If mold is already visible, call us — we'll tell you honestly whether drying alone is enough.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Do you work with insurance? <span class="plus">+</span></button>
+          <div class="answer"><p>Yes. Every job comes with an itemized invoice, moisture log and photo documentation — the format adjusters expect. Most water damage claims cover professional drying equipment.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>I'm a contractor — how do the accounts work? <span class="plus">+</span></button>
+          <div class="answer"><p>Email us to open an account: you get a priority dispatch line, 15% off the rate card, monthly consolidated billing across all sites, and moisture documentation for your clients. No fees, no minimums.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>Standing water won't wait.<br /><span class="water-word">Neither should you.</span></h2>
+      <p>Call now — in two minutes we'll tell you what gear you need and when we're at your door. Yes, even at 3 AM.</p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href={PHONE_LINK}>📞 {PHONE_DISPLAY} — 24/7</a>
+        <a class="btn btn-ghost" href={`mailto:${EMAIL}`}>✉️ {EMAIL}</a>
+      </div>
+      <p class="fine">~90-min emergency response · Same-day delivery across LA &amp; Orange County · Se habla español</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" width="24" height="24">
+          <rect width="64" height="64" rx="14" fill="#19B5D6"/>
+          <path d="M32 10c8 10 14 17.5 14 26a14 14 0 1 1-28 0c0-8.5 6-16 14-26z" fill="#071522"/>
+        </svg>
+        DRYBOX
+      </a>
+      <span>24/7 emergency flood drying · Los Angeles &amp; Orange County</span>
+      <span>© <span data-year>2026</span> DryBox. All rights reserved.</span>
+    </div>
+  </footer>
+</Base>
+
+<style>
+  .eyebrow-light { color: var(--water); }
+  .eyebrow-light::before { background: var(--accent); }
+</style>
