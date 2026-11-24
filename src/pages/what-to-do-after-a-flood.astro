@@ -1,0 +1,224 @@
+---
+import Base from '../layouts/Base.astro';
+
+// Flood guide (23.11.2026): answer-machine page for the exact question people
+// google after water gets in — "What to do after a flood in Long Beach".
+// Honest claims only: no time guarantees, no documentation promises,
+// no mold-prevention promises. Prices = site prices.
+const PHONE_DISPLAY = '(628) 276-5621';
+const PHONE_LINK = 'tel:+16282765621';
+const EMAIL = 'drybox@heyner.business';
+---
+
+<Base
+  title="What to Do After a Flood in Long Beach | DryBox"
+  description="Water in your home in Long Beach? Step by step: stay safe, stop the water, document the damage, dry fast. Pro LGR dehumidifier rental from $129/day, same-day delivery, 24/7."
+>
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="DryBox home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#19B5D6"/>
+          <path d="M32 10c8 10 14 17.5 14 26a14 14 0 1 1-28 0c0-8.5 6-16 14-26z" fill="#071522"/>
+          <path d="M24 38a8 8 0 0 0 8 8" stroke="#19B5D6" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        DRYBOX
+      </a>
+      <div class="nav-links" data-nav-links>
+        <a href="/#fleet">Fleet</a>
+        <a href="/#packages">Packages</a>
+        <a href="/#sandbags">Sandbags</a>
+        <a href="/#contractors">Contractors</a>
+        <a href="/#area">Service area</a>
+        <a href="/what-to-do-after-a-flood">Flood guide</a>
+        <a href="/#faq">FAQ</a>
+        <a class="btn btn-accent" href={PHONE_LINK}>24/7: {PHONE_DISPLAY}</a>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <svg class="hero-waves" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+      <path d="M-40 120 Q 60 80 160 120 T 360 120 T 560 120" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 180 Q 60 140 160 180 T 360 180 T 560 180" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 240 Q 60 200 160 240 T 360 240 T 560 240" stroke="#19B5D6" stroke-width="10" fill="none"/>
+      <path d="M-40 300 Q 60 260 160 300 T 360 300 T 560 300" stroke="#19B5D6" stroke-width="10" fill="none"/>
+    </svg>
+    <div class="wrap">
+      <span class="eyebrow eyebrow-light">Flood guide — Long Beach &amp; Orange County</span>
+      <h1>Water in the house?<br /><span class="water-word">Here's what to do first.</span></h1>
+      <p class="lead">
+        A burst pipe, a king tide over the seawall, rain through a window —
+        the first hours decide how bad it gets. Do these four things, in this
+        order. Then call us if you need pro drying gear.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href={PHONE_LINK}>📞 Call now — 24/7</a>
+        <a class="btn btn-ghost" href="#dry-fast">Skip to drying gear</a>
+      </div>
+      <div class="hero-trust">
+        <span><i class="dot"></i>Same-day delivery</span>
+        <span><i class="dot"></i>Itemized invoice with every job</span>
+        <span><i class="dot"></i>German-owned &amp; operated</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ STEPS ============ -->
+  <section class="how" id="steps" style="background: var(--navy-900);">
+    <div class="wrap">
+      <span class="eyebrow">The first four steps</span>
+      <h2 class="section-title" style="color:#fff">Four steps. In this order.</h2>
+      <p class="section-sub">No forms, no waiting. Water damage doesn't wait — neither should you.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Stay safe</h3>
+          <p>If water is near outlets, appliances or your breaker panel, don't step in it — turn the power off at the main breaker first, and only if you can reach it dry. If the water smells like sewage, stay out and call a plumber.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Stop the water</h3>
+          <p>Burst pipe or leaking appliance: shut the main water valve. King tide or storm surge coming over a seawall: you can't stop the ocean — sandbag the doors, move things up, and wait it out.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Document, then move</h3>
+          <p>Take photos of everything wet <em>before</em> you move it — your insurer will want them. Then move valuables, rugs and electronics up and out, and lift furniture onto blocks if you can.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>Dry fast</h3>
+          <p>Getting the moisture out fast — ideally within the first 24–48 hours — is the single most important step. A pro dehumidifier pulls water out of floors, walls and air. That's what we rent, from $129/day, delivered same-day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LONG BEACH SPECIFICS ============ -->
+  <section id="long-beach">
+    <div class="wrap">
+      <span class="eyebrow">Long Beach, specifically</span>
+      <h2 class="section-title">Why Long Beach floods — and what helps.</h2>
+      <p class="section-sub">
+        The Peninsula and the low streets near the bay flood first. King tides
+        return Nov 26 &amp; Dec 25, and a very strong El Niño winter is coming.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon"><span style="font-size:26px">🌊</span></div>
+          <h3>King tides</h3>
+          <p class="spec">The highest tides of the year push water over seawalls and into low garages and ground floors — even on a sunny day. Check the tide table before the holidays, not after.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><span style="font-size:26px">🧱</span></div>
+          <h3>Sandbags before, not after</h3>
+          <p class="spec">The city hands residents 10 free bags per household at fire stations. If you need more than that — placed where they belong — we deliver 25 pre-filled bags for $249 or 50 for $449.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><span style="font-size:26px">💧</span></div>
+          <h3>After the water is in</h3>
+          <p class="spec">Mop out what you can, then get air moving and a dehumidifier running. A single wet room typically needs 3–5 days of continuous drying. Rushing it is how mold happens.</p>
+        </div>
+      </div>
+      <p class="rates-note">
+        <a href="/#sandbags" style="color: var(--water-deep); font-weight: 700;">See sandbag delivery &amp; placement →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ DRYING GEAR ============ -->
+  <section id="dry-fast" style="padding-top: 0;">
+    <div class="wrap">
+      <span class="eyebrow">Drying gear</span>
+      <h2 class="section-title">What we bring to a flooded home.</h2>
+      <p class="section-sub">
+        Pro-grade machines, serviced and tested before every rental.
+        Our fleet is small and demand is high — first come, first served.
+      </p>
+      <div class="cards">
+        <div class="card featured">
+          <span class="card-badge">Flagship</span>
+          <h3>LGR Dehumidifier</h3>
+          <p class="spec">Dri-Eaz LGR 6000Li · 100 pints/day (AHAM). Pulls moisture out of walls, floors and air — even at low humidity.</p>
+          <div class="price"><b>$129</b> <small>/ day · $520 / week</small></div>
+        </div>
+        <div class="card">
+          <h3>Air Mover</h3>
+          <p class="spec">Dri-Eaz Velo Pro class · 850 CFM fan. Pushes dry air across floors and up walls — the dehumidifier's best friend.</p>
+          <div class="price"><b>$39</b> <small>/ day · $155 / week</small></div>
+        </div>
+        <div class="card">
+          <h3>HEPA Air Scrubber</h3>
+          <p class="spec">500 CFM HEPA filtration. Filters mold spores, fine dust and odors out of the air while the room dries.</p>
+          <div class="price"><b>$99</b> <small>/ day · $395 / week</small></div>
+        </div>
+      </div>
+      <p class="rates-note">
+        Bundles from <b>$149/day</b> — <a href="/#packages" style="color: var(--water-deep); font-weight: 700;">see packages &amp; rates →</a>
+        <br />Limited availability: when demand is high — like King Tides week — units go fast. Call early.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Good questions.</h2>
+      <div class="faq-list">
+        <div class="faq-item" data-faq>
+          <button>How fast do I need to act? <span class="plus">+</span></button>
+          <div class="answer"><p>As fast as you can. Getting the moisture out within the first 24–48 hours is the single most important step — after that, drying takes longer and the risk of mold grows. Call us as soon as the water is stopped.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Can I dry it myself with fans and open windows? <span class="plus">+</span></button>
+          <div class="answer"><p>For a small spill, maybe. For a flooded room, fans move wet air around — they don't remove the water from it. A dehumidifier actually pulls the moisture out of the air, the floor and the walls. That's the difference.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Will this prevent mold? <span class="plus">+</span></button>
+          <div class="answer"><p>We can't promise mold prevention — nobody can. What we know: getting the moisture out fast, ideally within the first 24–48 hours, is the single most important step. If mold is already visible, drying alone isn't enough — that needs a mold specialist.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Do you deliver to the Peninsula? <span class="plus">+</span></button>
+          <div class="answer"><p>Yes — same-day delivery across Los Angeles &amp; Orange County, including the Long Beach Peninsula, Balboa Peninsula and Balboa Island. Availability depends on stock, so call us and we'll tell you straight away.</p></div>
+        </div>
+        <div class="faq-item" data-faq>
+          <button>Do you really come at 3 in the morning? <span class="plus">+</span></button>
+          <div class="answer"><p>Yes — if we have a unit available. Water doesn't wait for business hours, so neither do we: 24 hours a day, 365 days a year. Availability depends on stock, so call us and we'll tell you straight away.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>Standing water won't wait.<br /><span class="water-word">Neither should you.</span></h2>
+      <p>Call now — in two minutes we'll tell you what gear you need and whether a unit is available. Yes, even at 3 AM.</p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href={PHONE_LINK}>📞 {PHONE_DISPLAY} — 24/7</a>
+        <a class="btn btn-ghost" href={`mailto:${EMAIL}`}>✉️ {EMAIL}</a>
+      </div>
+      <p class="fine">Same-day delivery across LA &amp; Orange County · 24/7 · Se habla español</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap footer-inner">
+      <a class="brand" href="/">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" width="24" height="24">
+          <rect width="64" height="64" rx="14" fill="#19B5D6"/>
+          <path d="M32 10c8 10 14 17.5 14 26a14 14 0 1 1-28 0c0-8.5 6-16 14-26z" fill="#071522"/>
+        </svg>
+        DRYBOX
+      </a>
+      <span>24/7 emergency flood drying · Los Angeles &amp; Orange County</span>
+      <span><a href="/what-to-do-after-a-flood" style="color: rgba(255,255,255,0.6);">Flood guide</a> · © <span data-year>2026</span> DryBox. All rights reserved.</span>
+    </div>
+  </footer>
+</Base>
