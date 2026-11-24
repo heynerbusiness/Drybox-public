@@ -3,8 +3,8 @@ import Base from '../layouts/Base.astro';
 
 // NOTE (Lennart): Platzhalter-Kontaktdaten — bitte ersetzen, bevor die Seite live geht.
 // "DryBox" ist ein Arbeitstitel und lässt sich in Sekunden umbenennen.
-// Positionierung v2 (13.10.2026): schnellster lokaler 24/7-Notdienst, Premium-Fleet,
-// deutsche Gründlichkeit, Bundles + Contractor-Accounts als Skalierungshebel.
+// Positionierung v3 (23.11.2026): schnellster lokaler 24/7-Notdienst, nur ehrliche
+// Claims (was wir wirklich können), Bundles + Contractor-Discount als Skalierungshebel.
 const PHONE_DISPLAY = '(628) 276-5621';
 const PHONE_LINK = 'tel:+16282765621';
 const EMAIL = 'drybox@heyner.business';
@@ -12,7 +12,7 @@ const EMAIL = 'drybox@heyner.business';
 
 <Base
   title="DryBox — 24/7 Emergency Flood Drying in Los Angeles & Orange County"
-  description="Flooded at 2 AM? Pro-grade LGR dehumidifiers at your door in ~90 minutes, day or night. German drying discipline, insurance-ready docs. LA & Orange County."
+  description="Flooded at 2 AM? Pro-grade LGR dehumidifiers delivered same-day, day or night. LA & Orange County."
 >
   <!-- ============ NAV ============ -->
   <nav class="nav">
@@ -50,17 +50,16 @@ const EMAIL = 'drybox@heyner.business';
       <span class="eyebrow eyebrow-light">24/7 emergency flood drying — Los Angeles &amp; Orange County</span>
       <h1>Flooded at 2 AM?<br /><span class="water-word">We're already on the way.</span></h1>
       <p class="lead">
-        Pro-grade LGR dehumidifiers and drying gear at your door in about
-        <b>90 minutes</b> — day or night. German drying discipline:
-        moisture-logged, photo-documented, insurance-ready.
+        Pro-grade LGR dehumidifiers and drying gear, delivered same-day —
+        day or night. If we have a unit available, we're on our way.
       </p>
       <div class="hero-ctas">
         <a class="btn btn-accent" href={PHONE_LINK}>📞 Call now — 24/7</a>
         <a class="btn btn-ghost" href="#packages">See packages &amp; rates</a>
       </div>
       <div class="hero-trust">
-        <span><i class="dot"></i>~90-min emergency response</span>
-        <span><i class="dot"></i>Insurance-ready documentation</span>
+        <span><i class="dot"></i>Same-day delivery</span>
+        <span><i class="dot"></i>Itemized invoice with every job</span>
         <span><i class="dot"></i>German-owned &amp; operated</span>
       </div>
     </div>
@@ -69,10 +68,10 @@ const EMAIL = 'drybox@heyner.business';
   <!-- ============ STATS ============ -->
   <div class="stats">
     <div class="wrap stats-grid">
-      <div class="stat"><b>~90 min</b><span>average emergency response time</span></div>
+      <div class="stat"><b>100 pints</b><span>water removal per day, per flagship unit (AHAM)</span></div>
       <div class="stat"><b>24/7/365</b><span>nights, weekends, holidays — we answer</span></div>
-      <div class="stat"><b>230 pints</b><span>max. water removal per day, per flagship unit</span></div>
-      <div class="stat"><b>$1,700+</b><span>pro machines in our fleet — never homeowner toys</span></div>
+      <div class="stat"><b>$129/day</b><span>pro LGR rental, delivered to your door</span></div>
+      <div class="stat"><b>LA &amp; OC</b><span>local — same-day delivery across the area</span></div>
     </div>
   </div>
 
@@ -82,25 +81,25 @@ const EMAIL = 'drybox@heyner.business';
       <span class="eyebrow">Why DryBox</span>
       <h2 class="section-title">The fastest dry-out in town.<br />With German discipline.</h2>
       <p class="section-sub">
-        Anyone can rent you a box. We bring speed, pro gear and paperwork
-        your insurance adjuster will love.
+        Anyone can rent you a box. We bring speed, pro gear and honest,
+        flat-rate pricing — no surprises.
       </p>
       <div class="cards">
         <div class="card">
           <div class="card-icon"><span style="font-size:26px">🚨</span></div>
-          <h3>Speed, guaranteed</h3>
-          <p class="spec">Water damage doesn't keep office hours — neither do we. Emergency dispatch in about 90 minutes, anywhere in LA &amp; OC, 24 hours a day.</p>
+          <h3>Fast, day or night</h3>
+          <p class="spec">Water damage doesn't keep office hours — neither do we. Call any time, day or night — if we have a unit available, we're on our way, anywhere in LA &amp; OC.</p>
         </div>
         <div class="card featured">
           <span class="card-badge">Our edge</span>
           <div class="card-icon"><span style="font-size:26px">🏆</span></div>
           <h3>Pro fleet only</h3>
-          <p class="spec">Every unit is a $1,500+ pro machine — XPOWER, Tomahawk, Dri-Eaz class LGR dehumidifiers. We bought the expensive gear so you don't have to.</p>
+          <p class="spec">Pro-grade LGR dehumidifiers — the same class of machines restoration companies use. We bought the pro gear so you don't have to.</p>
         </div>
         <div class="card">
           <div class="card-icon"><span style="font-size:26px">🇩🇪</span></div>
           <h3>German discipline</h3>
-          <p class="spec">Every job gets a moisture log, photo documentation and an insurance-ready invoice. Gründlichkeit is our love language.</p>
+          <p class="spec">Clear flat rates, an itemized invoice with every job, and we show up when we say we will. Gründlichkeit is our love language.</p>
         </div>
       </div>
     </div>
@@ -112,8 +111,8 @@ const EMAIL = 'drybox@heyner.business';
       <span class="eyebrow">The fleet</span>
       <h2 class="section-title">The good stuff. Only the good stuff.</h2>
       <p class="section-sub">
-        The same machines the big restoration franchises run — maintained,
-        calibrated and ready to roll within minutes.
+        Pro-grade machines, serviced and tested before every rental.
+        Our fleet is small and demand is high — first come, first served.
       </p>
       <div class="cards">
         <div class="card featured">
@@ -125,12 +124,12 @@ const EMAIL = 'drybox@heyner.business';
             </svg>
           </div>
           <h3>LGR Dehumidifier</h3>
-          <p class="spec">Tomahawk TCD230 class · 230 pints/day. The workhorse that pulls moisture out of walls, floors and air — even at low humidity.</p>
+          <p class="spec">Dri-Eaz LGR 6000Li · 100 pints/day (AHAM). The workhorse that pulls moisture out of walls, floors and air — even at low humidity.</p>
           <ul>
-            <li>230 pints/day extraction</li>
-            <li>Covers 1,500+ sq ft</li>
+            <li>100 pints/day extraction (AHAM)</li>
             <li>Auto pump-out — no emptying tanks</li>
-            <li>Runs 24/7 until materials test dry</li>
+            <li>Runs on a standard 115V outlet</li>
+            <li>On wheels — easy to move room to room</li>
           </ul>
           <div class="price"><b>$129</b> <small>/ day · $520 / week</small></div>
         </div>
@@ -142,7 +141,7 @@ const EMAIL = 'drybox@heyner.business';
             </svg>
           </div>
           <h3>Air Mover</h3>
-          <p class="spec">High-velocity 2,700 CFM fan. Pushes dry air across floors and up walls — the dehumidifier's best friend.</p>
+          <p class="spec">Dri-Eaz Velo Pro class · 850 CFM fan. Pushes dry air across floors and up walls — the dehumidifier's best friend.</p>
           <ul>
             <li>Dries floors, carpets &amp; drywall</li>
             <li>Stackable, daisy-chainable</li>
@@ -168,8 +167,10 @@ const EMAIL = 'drybox@heyner.business';
         </div>
       </div>
       <p class="rates-note">
-        <b>We buy the $1,500+ machines so you don't have to.</b> Every unit is
-        pro-grade, serviced after each job and tested before dispatch.
+        <b>We buy the pro-grade machines so you don't have to.</b> Every unit is
+        serviced after each job and tested before dispatch. <b>Limited
+        availability:</b> when demand is high — like King Tides week — units go
+        fast. Call early.
       </p>
     </div>
   </section>
@@ -183,22 +184,22 @@ const EMAIL = 'drybox@heyner.business';
       <div class="cards">
         <div class="card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.14);">
           <h3 style="color:#fff">Single-Room Rescue</h3>
-          <p class="spec" style="color: rgba(255,255,255,0.65);">LGR dehumidifier + 1 air mover + moisture log</p>
+          <p class="spec" style="color: rgba(255,255,255,0.65);">LGR dehumidifier + 1 air mover</p>
           <ul style="color: rgba(255,255,255,0.85);">
-            <li>The most common job we run</li>
+            <li>For a single wet room</li>
             <li>Typical dry-out: 3–5 days</li>
-            <li>Insurance-ready invoice included</li>
+            <li>Itemized invoice included</li>
           </ul>
           <div class="price" style="border-color: rgba(255,255,255,0.14);"><b style="color:#fff">$149</b> <small style="color: rgba(255,255,255,0.6);">/ day</small></div>
         </div>
         <div class="card featured" style="background:#fff;">
           <span class="card-badge">Most popular</span>
           <h3>Emergency Dry-Out Kit</h3>
-          <p class="spec">Flagship LGR + 2 air movers + moisture log + photo docs</p>
+          <p class="spec">Flagship LGR + 2 air movers</p>
           <ul>
-            <li>Our fastest full dry-out setup</li>
-            <li>90-min emergency delivery available</li>
-            <li>Daily moisture check-ins</li>
+            <li>Full dry-out setup for larger rooms</li>
+            <li>Emergency delivery available</li>
+            <li>Pickup included</li>
           </ul>
           <div class="price"><b>$189</b> <small>/ day</small></div>
         </div>
@@ -208,13 +209,13 @@ const EMAIL = 'drybox@heyner.business';
           <ul style="color: rgba(255,255,255,0.85);">
             <li>For large losses &amp; contractors</li>
             <li>Multi-week rates on request</li>
-            <li>Dedicated dispatcher</li>
+            <li>Pickup included</li>
           </ul>
           <div class="price" style="border-color: rgba(255,255,255,0.14);"><b style="color:#fff">$349</b> <small style="color: rgba(255,255,255,0.6);">/ day</small></div>
         </div>
       </div>
       <p class="rates-note" style="color: rgba(255,255,255,0.65);">
-        🚨 Emergency delivery (~90 min) <b style="color:#fff">$149</b> ·
+        🚨 Emergency delivery <b style="color:#fff">$149</b> ·
         ⚡ Same-day delivery <b style="color:#fff">$79</b> ·
         📦 Scheduled delivery <b style="color:#fff">free</b> ·
         Pickup always free.
@@ -239,7 +240,7 @@ const EMAIL = 'drybox@heyner.business';
           <ul>
             <li>Covers a standard garage door + entryway</li>
             <li>Stacked &amp; placed for you</li>
-            <li>Free moisture check after the next high tide</li>
+            <li>Placed where they belong — no lifting for you</li>
           </ul>
           <div class="price"><b>$249</b> <small>flat rate</small></div>
         </div>
@@ -282,31 +283,31 @@ const EMAIL = 'drybox@heyner.business';
   <section id="contractors">
     <div class="wrap">
       <span class="eyebrow">For contractors &amp; jobsites</span>
-      <h2 class="section-title">Concrete won't wait<br />for the schedule.</h2>
+      <h2 class="section-title">Contractor discount.<br />No account needed.</h2>
       <p class="section-sub">
         Drying for coatings, slab cures and water intrusion on active sites.
-        Open a DryBox contractor account and skip the line — every time.
+        If you're a contractor, you get 15% off the rate card — simple as that.
       </p>
       <div class="area-grid">
         <div class="area-col">
-          <h3>⚡ Priority dispatch line</h3>
-          <p class="spec">One number, no queue. Your sites jump to the front — including nights and weekends.</p>
-        </div>
-        <div class="area-col">
           <h3>💰 15% off the rate card</h3>
-          <p class="spec">Standing contractor discount on every unit, every day. Volume tiers for multi-site crews.</p>
+          <p class="spec">Standing contractor discount on every unit, every day.</p>
         </div>
         <div class="area-col">
-          <h3>🧾 Monthly consolidated billing</h3>
-          <p class="spec">One invoice per month across all your sites — with moisture logs attached for your clients.</p>
+          <h3>📅 Minimum 5 days</h3>
+          <p class="spec">Contractor rentals run at least 5 days — pick the gear up yourself, or we deliver it for a fee.</p>
         </div>
         <div class="area-col">
-          <h3>📋 Docs your clients love</h3>
-          <p class="spec">Moisture readings, photo documentation and insurance-ready invoices, delivered per job.</p>
+          <h3>🧾 First rental invoiced upfront</h3>
+          <p class="spec">Your first rental is invoiced right away. After that, we can bill monthly.</p>
+        </div>
+        <div class="area-col">
+          <h3>📞 One number, 24/7</h3>
+          <p class="spec">Call or text (628) 276-5621 — tell us you're a contractor and we'll apply the discount.</p>
         </div>
       </div>
       <div style="margin-top: 32px;">
-        <a class="btn btn-dark" href={`mailto:${EMAIL}?subject=Contractor%20account%20request`}>Open a contractor account</a>
+        <a class="btn btn-dark" href={PHONE_LINK}>📞 Call for contractor rates — {PHONE_DISPLAY}</a>
       </div>
     </div>
   </section>
@@ -326,12 +327,12 @@ const EMAIL = 'drybox@heyner.business';
         <div class="step">
           <div class="num">2</div>
           <h3>We come &amp; set up</h3>
-          <p>Emergency in ~90 minutes, same-day, or scheduled — anywhere in LA &amp; OC. We place the machines for optimal airflow and start them up.</p>
+          <p>Emergency, same-day, or scheduled — anywhere in LA &amp; OC. We place the machines for optimal airflow and start them up.</p>
         </div>
         <div class="step">
           <div class="num">3</div>
           <h3>We monitor &amp; pick up</h3>
-          <p>Moisture readings until materials test dry — typically 3–5 days — then we collect everything. You get the insurance-ready docs.</p>
+          <p>Drying usually takes 3–5 days — then we collect everything. You get an itemized invoice.</p>
         </div>
       </div>
     </div>
@@ -376,31 +377,27 @@ const EMAIL = 'drybox@heyner.business';
       <div class="faq-list">
         <div class="faq-item" data-faq>
           <button>Do you really come at 3 in the morning? <span class="plus">+</span></button>
-          <div class="answer"><p>Yes. Water doesn't wait for business hours, so neither do we — 24 hours a day, 365 days a year. Emergency dispatch averages around 90 minutes anywhere in LA &amp; Orange County.</p></div>
+          <div class="answer"><p>Yes — if we have a unit available. Water doesn't wait for business hours, so neither do we: 24 hours a day, 365 days a year. Availability depends on stock, so call us and we'll tell you straight away.</p></div>
         </div>
         <div class="faq-item" data-faq>
           <button>Why are you more expensive than renting from Home Depot? <span class="plus">+</span></button>
-          <div class="answer"><p>Home Depot rents you a box. We deliver pro-grade $1,700+ machines, place them for optimal airflow, monitor moisture until materials test dry, document everything for your insurance and pick it all up again. You're not renting a machine — you're buying a dry home.</p></div>
+          <div class="answer"><p>Home Depot rents you a box you pick up yourself, during business hours. Call us at 3 AM and we come by with pro-grade machines, place them for optimal airflow and help you get them running — then we pick it all up again. You're not renting a machine — you're buying a dry home.</p></div>
         </div>
         <div class="faq-item" data-faq>
           <button>How long does drying take? <span class="plus">+</span></button>
-          <div class="answer"><p>A single wet room typically needs 3–5 days of continuous drying. We take moisture readings and only pick up the equipment once materials test dry — rushing it is how mold happens.</p></div>
+          <div class="answer"><p>A single wet room typically needs 3–5 days of continuous drying. Rushing it is how mold happens — so we leave the gear running until the space is properly dry.</p></div>
         </div>
         <div class="faq-item" data-faq>
           <button>Will this prevent mold? <span class="plus">+</span></button>
-          <div class="answer"><p>Drying within the first 24–48 hours is the single biggest factor in preventing mold growth. Our gear removes the moisture mold needs to thrive, and the HEPA scrubber filters spores out of the air while we work. If mold is already visible, call us — we'll tell you honestly whether drying alone is enough.</p></div>
-        </div>
-        <div class="faq-item" data-faq>
-          <button>Do you work with insurance? <span class="plus">+</span></button>
-          <div class="answer"><p>Yes. Every job comes with an itemized invoice, moisture log and photo documentation — the format adjusters expect. Most water damage claims cover professional drying equipment.</p></div>
+          <div class="answer"><p>We can't promise mold prevention — nobody can. What we know: getting the moisture out fast, ideally within the first 24–48 hours, is the single most important step. If mold is already visible, drying alone isn't enough — that needs a mold specialist.</p></div>
         </div>
         <div class="faq-item" data-faq>
           <button>Do you deliver sandbags before storms? <span class="plus">+</span></button>
           <div class="answer"><p>Yes — pre-filled 30-lb bags, delivered and placed along your garage, doors or seawall: 25 bags for $249, 50 bags for $449, and spring removal as a +$79 add-on. The cities hand residents 10 free bags per household at fire stations; we cover everything beyond that, placed where it belongs. Prices are fixed for the season — we never raise them during storms or emergencies.</p></div>
         </div>
         <div class="faq-item" data-faq>
-          <button>I'm a contractor — how do the accounts work? <span class="plus">+</span></button>
-          <div class="answer"><p>Email us to open an account: you get a priority dispatch line, 15% off the rate card, monthly consolidated billing across all sites, and moisture documentation for your clients. No fees, no minimums.</p></div>
+          <button>I'm a contractor — how does the discount work? <span class="plus">+</span></button>
+          <div class="answer"><p>Contractors get 15% off the rate card. Minimum rental is 5 days — pick the gear up yourself, or we deliver it for a fee. Your first rental is invoiced right away; after that, we can bill monthly. Just call (628) 276-5621 and tell us you're a contractor.</p></div>
         </div>
       </div>
     </div>
@@ -410,12 +407,12 @@ const EMAIL = 'drybox@heyner.business';
   <section class="cta">
     <div class="wrap">
       <h2>Standing water won't wait.<br /><span class="water-word">Neither should you.</span></h2>
-      <p>Call now — in two minutes we'll tell you what gear you need and when we're at your door. Yes, even at 3 AM.</p>
+      <p>Call now — in two minutes we'll tell you what gear you need and whether a unit is available. Yes, even at 3 AM.</p>
       <div class="cta-row">
         <a class="btn btn-accent" href={PHONE_LINK}>📞 {PHONE_DISPLAY} — 24/7</a>
         <a class="btn btn-ghost" href={`mailto:${EMAIL}`}>✉️ {EMAIL}</a>
       </div>
-      <p class="fine">~90-min emergency response · Same-day delivery across LA &amp; Orange County · Se habla español</p>
+      <p class="fine">Same-day delivery across LA &amp; Orange County · 24/7 · Se habla español</p>
     </div>
   </section>
 
